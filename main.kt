@@ -41,6 +41,5 @@ fun start() {
             return start()
         }
     }
-
     return start()
 }
