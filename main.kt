@@ -16,6 +16,8 @@ fun main() {
 }
 
 fun start() {
+    var score = 0
+
     println("== ✊(r) ✋(p) ✌️(s) から選択 (終了: e) ==")
     val user_answer_before = readLine()
 
@@ -41,6 +43,10 @@ fun start() {
             return start()
         }
     }
-    
+
+    val RPS = listOf("✊", "✋", "✌️")
+    val kotlin_answer = RPS.shuffled().take(1)[0]
+    println("Kotlin: ${kotlin_answer}\n")
+
     return start()
 }
